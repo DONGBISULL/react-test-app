@@ -1,10 +1,11 @@
+import Avatar from "./Avatar";
+
 function Profile({ image, name, title, isNew }) {
   // function Profile({ image, name, title, createTime }) {
   return (
     <div className="profile">
-      {isNew ? <span className="newTag">NEW</span> : null}
       {/* {isBeforeThreeDaysProfile(createTime) ? <span className="newTag">NEW</span> : null} */}
-      <img className="thumnail" src={image} alt="avatar" />
+      <Avatar image={image} isNew={isNew} />
       <h1>{name}</h1>
       <p>{title}</p>
     </div>
