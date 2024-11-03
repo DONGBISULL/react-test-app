@@ -4,12 +4,12 @@ export default function AppXY() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handlePointerMove = (e) => {
-    // setPosition({x :  e.clientX , y : e.clientY});
+    setPosition({x :  e.clientX , y : e.clientY});
     // 수평이동만 가능할 경우
-    setPosition((pre) => ({
-      ...pre,
-      x: e.clientX,
-    }));
+    // setPosition((pre) => ({
+    //   ...pre,
+    //   x: e.clientX,
+    // }));
   };
 
   return (
