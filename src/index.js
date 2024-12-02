@@ -5,11 +5,14 @@ import reportWebVitals from './reportWebVitals';
 import AppXY from './components/AppXY';
 import AppMentor from './components/AppMentor';
 import AppMentors from './components/AppMentors';
+import AppForm from './components/AppForm';
+import AppWrap from './components/AppWrap';
+import AppTheme from './components/AppTheme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppMentors />
+    <AppTheme/>
   </React.StrictMode>
 );
 
